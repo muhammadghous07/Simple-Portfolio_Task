@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <img src="MyProfile.jpg" alt="My Photo">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Muhammad Ghous, a frontend developer passionate about crafting elegant web interfaces using HTML, CSS, JavaScript and Python.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Machine Learning</div>
+            <div class="skill-card">Python</div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul class="hobby-list">
+            <li>🎮 Gaming</li>
+            <li>📖 Reading</li>
+            <li>🎵 Music</li>
+            <li>💻 Coding</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form onsubmit="handleSubmit(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Ghous</p>
+    </footer>
+
+    <button id="scrollTopBtn">&#8679;</button>
+
+</body>
+</html>

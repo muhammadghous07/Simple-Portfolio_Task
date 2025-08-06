@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #22e932;
+    color: #000;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-container img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: rgb(199, 34, 34);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 8px lightgray;
+    transition: transform 0.2s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: #e8f0fe;
+}
+
+.hobby-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    list-style: none;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(27, 3, 3);
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: navy;
+    color: rgb(192, 13, 13);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
